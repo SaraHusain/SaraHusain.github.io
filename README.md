@@ -1,11 +1,11 @@
 # Connect Four - Project 1
 
-* explanations of the technologies used
+# Explanations of the technologies used
 * the project is created with HTML, CSS, and JavaScript.
 * HTML is used to create the basic layout excluding the game board. CSS is used to style all the elements in the project. JavaScript creates the game board and all functionalities/ actions of the game (the interactivity part).
 * used normalize CDN stylesheet and Google Fonts.
 
-* the approach taken
+# The approach taken
 * the game board is fully generated using JavaScript.
 * the pieces are placed by adding a specific class to the chosen spot on the board.
 * the JavaScript code checks for 4 pieces of the same color in all angles using for loops and if statements.
@@ -17,8 +17,8 @@
 * the background music can be played and paused throughout the game.
 * the music button has background gradient animation.
 
-* installation instructions
-* the project contains a font file (.ttf), it is recommended to install it when downloading the project
+# Installation instructions
+* the project contains a font file (.ttf), it is recommended to install it when downloading the project.
 
 
 # How To Play
@@ -35,3 +35,12 @@
 # User Story
 
 * Read UserStories.md
+* As a player I want to see the game board
+* As a player I want to know which round it is
+* As a player I want to see who the current player is
+* As a player I want to pick a spot and then switch the player
+* As a player I want to see the score
+* As a player I want to continue the game if encountered a draw without changes to the score
+* As a player I want to determine who wins after each round
+* As a player I want to determine who wins the game (best 2 out of 3)
+* As a player I want to reset the game board
