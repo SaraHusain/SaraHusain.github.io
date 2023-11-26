@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts Connect Four Game</title>
+    <link rel="icon" href="images/Hogwarts_logo_PNG1.png" type="image/png" sizes="16x16">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+
+    <!--my css and normalize CDN link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="allContent">
+    <header>
+        <img src="images/Hogwarts_logo_PNG1.png" alt="logo">
+        <h1>Connect Four - Hogwarts Edition</h1>
+    </header>
+
+    <audio id="bgMusic" src="music/HedwigsTheme.mp3"></audio>
+    <a href="#" class="icon" onClick="togglePlay()"><img src="images/icon-1628258_640.png" alt="music icon"></a>
+    
+    <main>
+        <h2>Player Turn: <span class="currentPlayer">1</span></h2>
+        <h2>Round: <span class="currentRound">1</span></h2>
+        <!--Round Winner-->
+        <div class="roundAnnounce_box">
+            <div class="announceRound"></div>
+            <a href="#" class="gameBTNRound" id="btn3" >Continue</a>
+        </div>
+        <!--Winner Announcement-->
+        <div class="announce_box">
+            <div class="announce"></div>
+            <a href="#" class="gameBTN" id="btn2" >Play Again</a>
+        </div>
+        <div class="gameElementsContainer">
+            <div class="characters">
+                <h2>Gryffindor Score: <span class="player1Score">0</span></h2>
+                <img class="figures" src="images/character1.png" alt="player one character">
+            </div>
+            <div id="board"></div>
+            <div class="characters">
+                <h2>Slytherin Score: <span class="player2Score">0</span></h2>
+                <img class="figures" src="images/character2.png" alt="player two character">
+            </div>
+        </div>
+        <!--Reset Game button-->
+    <div class="controlBar">
+        <a href="#" class="gameBTN" id="btn" >Reset Game</a>
+    </div>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2023 Connect Four Game. All Rights Reserved.</p>
+    </footer>
+</div>
+    <!--the javascript link-->
+    <script src="javascript/javascript.js"></script>
+</body>
+</html>
